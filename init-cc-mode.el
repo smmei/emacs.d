@@ -31,7 +31,8 @@
   (local-set-key "\M-f" 'c-forward-into-nomenclature)
   (local-set-key "\M-b" 'c-backward-into-nomenclature)
   (setq cc-search-directories '("." "/usr/include" "/usr/local/include/*" "../*/include" "$WXWIN/include"))
-  (setq c-basic-offset 4)
+  (setq c-basic-offset 8)
+  (setq tab-width 8)
   (setq c-style-variables-are-local-p nil)
   ;give me NO newline automatically after electric expressions are entered
   (setq c-auto-newline nil)
