@@ -111,6 +111,13 @@
 (defconst google-c-style
   `((c-recognize-knr-p . nil)
     (c-enable-xemacs-performance-kludge-p . t) ; speed up indentation in XEmacs
+
+    ;make the ENTER key indent next line properly
+    (local-set-key "\C-m" 'newline-and-indent)
+
+    ;make DEL take all previous whitespace with it
+    (c-toggle-hungry-state 1)
+
     (c-basic-offset . 8)
     (indent-tabs-mode . nil)
     (c-comment-only-line-offset . 0)
